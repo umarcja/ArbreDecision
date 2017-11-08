@@ -22,3 +22,4 @@ export class DetecteursComponent implements OnInit {
   ngOnInit() {
 
   }
+}
