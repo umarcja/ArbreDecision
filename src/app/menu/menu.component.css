@@ -1,0 +1,21 @@
+mat-toolbar{
+	display:flex;
+}
+
+.elementsDroite{
+	flex:10;
+}
+
+.menu{
+	flex:20;
+}
+
+.titre{
+	flex:70;
+	text-align: center;
+}
+mat-icon{
+    font-size: 30px;
+    height: 30px;
+    width: 30px;
+}

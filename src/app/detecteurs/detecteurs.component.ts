@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Detecteur } from '../detecteur';
-import { DETECTEURS} from '../mock-detecteurs';
+
 
 
 @Component({
@@ -9,13 +8,6 @@ import { DETECTEURS} from '../mock-detecteurs';
   styleUrls: ['./detecteurs.component.css']
 })
 export class DetecteursComponent implements OnInit {
-  detecteurs = DETECTEURS;
-
-  foods = [
-    {value: 'steak-0', viewValue: 'Steak'},
-    {value: 'pizza-1', viewValue: 'Pizza'},
-    {value: 'tacos-2', viewValue: 'Tacos'}
-  ];
 
   constructor() { }
 

@@ -10,11 +10,15 @@ import { DetecteursComponent } from './detecteurs/detecteurs.component';
 import { HttpModule } from '@angular/http';
 
 import { MatButtonModule, MatMenuModule, MatToolbarModule, MatIconModule, MatInputModule } from '@angular/material';
+import { MenuComponent } from './menu/menu.component';
+import { QuestionsComponent } from './questions/questions.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DetecteursComponent
+    DetecteursComponent,
+    MenuComponent,
+    QuestionsComponent
   ],
   imports: [
     BrowserModule,

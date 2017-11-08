@@ -1,0 +1,32 @@
+.optionBox{
+	display:flex;
+	position:relative;
+}
+
+.questionBox{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    flex:1;
+}
+
+.container{
+	width: 50%;
+    margin:auto;
+    margin-top:15px;
+}
+
+.button-row{
+	display:flex;
+}
+
+.buttonSpecs{
+	flex:1;
+}
+
+.mat-select{
+	text-align: center;
+}
