@@ -1,0 +1,19 @@
+<mat-toolbar color="primary">
+
+
+    <button class="menu" mat-button [matMenuTriggerFor]="appMenu"><mat-icon>menu</mat-icon></button>
+
+    <span class="titre">{{title}}</span>
+
+    <button class="elementsDroite" mat-button><mat-icon>home</mat-icon></button>
+
+    <button class="elementsDroite" mat-button><mat-icon>add_location</mat-icon></button>
+</mat-toolbar>
+
+<mat-menu #appMenu="matMenu">
+  <button mat-menu-item> Settings </button>
+  <button mat-menu-item> Help </button>
+</mat-menu>
+
+<app-detecteurs></app-detecteurs>
+

@@ -1,0 +1,145 @@
+<!--<h2>My detecteurs</h2>
+<ul class="heroes">
+  <li *ngFor="let detecteur of detecteurs">
+    {{detecteur.name}}
+  </li>
+</ul>-->
+
+<div class="container">
+  <mat-card  layout="row" layout-align="space-around none">
+    <mat-card-title>
+        <h2 class="mat-headline">Questions</h2>
+    </mat-card-title>
+
+    <mat-card-content>
+      <div layout="row" layout-align="space-around none" class="optionBox">
+        <span class="questionBox">Est-ce qu’il y a des équipements de détections existant à l’intersection ?</span>
+        <mat-form-field>
+        <mat-select ng-model="weapon" class="mat-no-underline elements" layout-align="center">
+          <mat-option value="Oui">Oui</mat-option>
+          <mat-option value="Non">Non</mat-option>
+        </mat-select>
+      </mat-form-field>
+      </div>
+
+      <div layout="row" layout-align="space-around none" class="optionBox">
+        <span class="questionBox">Est-ce que vous désirez faire de la détection de présence avec ce détecteur ?</span>
+        <mat-form-field>
+        <mat-select ng-model="armor" class="mat-no-underline elements" required mat-no-asterisk="false">
+          <mat-option value="Oui">Oui</mat-option>
+          <mat-option value="Non">Non</mat-option>
+        </mat-select>
+        </mat-form-field>
+      </div>
+
+      <div layout="row" layout-align="space-around none" class="optionBox">
+        <span class="questionBox">Est-ce que vous désirez faire de la détection de longueur de file d’attente avec ce détecteur?</span>
+        <mat-form-field>
+        <mat-select ng-model="drink" class="mat-no-underline elements">
+          <mat-option value="Oui">Oui</mat-option>
+          <mat-option value="Non">Non</mat-option>
+        </mat-select>
+        </mat-form-field>
+      </div>
+
+      <div layout="row" layout-align="space-around none" class="optionBox">
+        <span class="questionBox">Est-ce que vous désirez faire du comptage véhiculaire avec ce détecteur ?</span>
+        <mat-form-field>
+        <mat-select ng-model="weapon"  class="mat-no-underline elements">
+          <mat-option value="Oui">Oui</mat-option>
+          <mat-option value="Non">Non</mat-option>
+        </mat-select>
+        </mat-form-field>
+      </div>
+
+      <div layout="row" layout-align="space-around none" class="optionBox">
+        <span class="questionBox">Est-ce que vous désirez utiliser les fonctions du Traffic Data Collection (Comptage, Classification, Vitesse) ?</span>
+        <mat-form-field>
+          <mat-select ng-model="armor" class="mat-no-underline elements" required mat-no-asterisk="false" multiple>
+            <mat-option value="cloth">Comptage</mat-option>
+            <mat-option value="leather">Classification</mat-option>
+            <mat-option value="chain">Vitesse</mat-option>
+            <mat-option value="plate">Non</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <div layout="row" layout-align="space-around none" class="optionBox">
+        <span class="questionBox">Où sera positionné le détecteur ?</span>
+        <mat-form-field>
+        <mat-select ng-model="drink" class="mat-no-underline elements">
+          <mat-option value="miBLock">À mi-bloc</mat-option>
+          <mat-option value="intersection">À l'intersection</mat-option>
+        </mat-select>
+        </mat-form-field>
+      </div>
+
+      <div layout="row" layout-align="space-around none" class="optionBox">
+        <span class="questionBox">Quel est la hauteur maximale d’installation du détecteur?</span>
+
+        <mat-form-field class="example-full-width">
+          <input type="number" matInput placeholder="Nombre de mètre">  
+        </mat-form-field>
+      </div>
+
+      <div layout="row" layout-align="space-around none" class="optionBox">
+        <span class="questionBox">Combien de voie seront couvert par ce détecteur?</span>
+        <mat-form-field>
+        <mat-select ng-model="armor" class="mat-no-underline elements" required mat-no-asterisk="false">
+          <mat-option value="cloth">Cloth</mat-option>
+          <mat-option value="leather">Leather</mat-option>
+          <mat-option value="chain">Chainmail</mat-option>
+          <mat-option value="plate">Plate</mat-option>
+        </mat-select>
+        </mat-form-field>
+      </div>
+
+      <div layout="row" layout-align="space-around none" class="optionBox">
+        <span class="questionBox">Combien de zone de détection avez-vous de besoin?</span>
+        <mat-form-field>
+        <mat-select ng-model="drink" class="mat-no-underline elements">
+          <mat-option value="water">Water</mat-option>
+          <mat-option value="juice">Juice</mat-option>
+          <mat-option value="milk">Milk</mat-option>
+          <mat-option value="wine">Wine</mat-option>
+          <mat-option value="mead">Mead</mat-option>
+        </mat-select>
+        </mat-form-field>
+      </div>
+
+      <div layout="row" layout-align="space-around none" class="optionBox">
+        <span class="questionBox">Est-ce que les données recueilli par ce détecteur doivent être acheminées au logiciel TransCore ?</span>
+        <mat-form-field>
+        <mat-select ng-model="drink" class="mat-no-underline elements">
+          <mat-option value="water">Water</mat-option>
+          <mat-option value="juice">Juice</mat-option>
+          <mat-option value="milk">Milk</mat-option>
+          <mat-option value="wine">Wine</mat-option>
+          <mat-option value="mead">Mead</mat-option>
+        </mat-select>
+        </mat-form-field>
+      </div>
+
+      <div layout="row" layout-align="space-around none" class="optionBox">
+        <span class="questionBox">Est-ce que les données recueilli par ce détecteur doivent être acheminées à une base de données externes?</span>
+        <mat-form-field>
+          <mat-select ng-model="drink" class="mat-no-underline elements">
+            <mat-option value="water">Water</mat-option>
+            <mat-option value="juice">Juice</mat-option>
+            <mat-option value="milk">Milk</mat-option>
+            <mat-option value="wine">Wine</mat-option>
+            <mat-option value="mead">Mead</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+      </div>
+
+    </mat-card-content>
+    <div class="button-row">
+      <button class="buttonSpecs" mat-raised-button color="primary">Soumettre</button>
+    </div>
+  </mat-card>
+
+
+</div>
+
